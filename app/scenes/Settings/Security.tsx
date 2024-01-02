@@ -193,7 +193,7 @@ function Security() {
       </SettingRow>
 
       <h2>{t("Access")}</h2>
-      {isCloudHosted && (
+      {(true || isCloudHosted) && (
         <SettingRow
           label={t("Require invites")}
           name="inviteRequired"
